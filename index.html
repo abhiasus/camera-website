@@ -5,19 +5,16 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>ShutterHub - Camera Shop</title>
 
     <!-- Bootstrap CSS -->
 
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
         rel="stylesheet">
 
     <style>
-
         body {
             margin: 0;
             background-color: #141718;
@@ -72,10 +69,8 @@
             min-height: 620px;
 
             background:
-                linear-gradient(
-                    rgba(0, 0, 0, 0.55),
-                    rgba(0, 0, 0, 0.75)
-                ),
+                linear-gradient(rgba(0, 0, 0, 0.55),
+                    rgba(0, 0, 0, 0.75)),
                 url("https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=1600&q=80");
 
             background-size: cover;
@@ -287,8 +282,23 @@
                 font-size: 32px;
             }
 
-        }
+            footer {
+                text-align: center;
+            }
 
+            footer .row {
+                display: block;
+            }
+
+            footer .col-md-4 {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 25px;
+            }
+
+
+
+        }
     </style>
 
 </head>
@@ -297,762 +307,751 @@
 <body>
 
 
-<!-- ================= NAVBAR ================= -->
+    <!-- ================= NAVBAR ================= -->
 
-<nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg">
 
-    <div class="container">
+        <div class="container">
 
-        <a class="navbar-brand" href="index.html">
-            ShutterHub
-        </a>
-
-
-        <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#cameraNavbar">
-
-            <span class="navbar-toggler-icon"></span>
-
-        </button>
-
-
-        <div
-            class="collapse navbar-collapse"
-            id="cameraNavbar">
-
-            <ul class="navbar-nav ms-auto">
-
-                <li class="nav-item">
-                    <a
-                        class="nav-link"
-                        href="index.html">
-                        Home
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a
-                        class="nav-link"
-                        href="products.html">
-                        Products
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a
-                        class="nav-link"
-                        href="about.html">
-                        About
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a
-                        class="nav-link"
-                        href="cart.html">
-                        Cart
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a
-                        class="nav-link"
-                        href="contact.html">
-                        Contact
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a
-                        class="nav-link"
-                        href="tips.html">
-                        Tips
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a
-                        class="nav-link"
-                        href="shot.html">
-                        Shot
-                    </a>
-                </li>
-
-            </ul>
-
-        </div>
-
-    </div>
-
-</nav>
-
-
-<!-- ================= GAP ================= -->
-
-<div class="hero-gap"></div>
-
-
-<!-- ================= HERO ================= -->
-
-<section class="hero">
-
-    <div class="container">
-
-        <div class="hero-content">
-
-            <h1>
-
-                CAPTURE
-
-                <br>
-
-                <span>THE MOMENT</span>
-
-            </h1>
-
-
-            <p>
-
-                Discover premium cameras and
-                photography equipment designed
-                for every photographer.
-
-            </p>
-
-
-            <a
-                href="products.html"
-                class="btn gold-button">
-
-                Shop Now
-
+            <a class="navbar-brand" href="index.html">
+                ShutterHub
             </a>
 
-        </div>
 
-    </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#cameraNavbar">
 
-</section>
+                <span class="navbar-toggler-icon"></span>
 
-
-<!-- ================= FEATURES ================= -->
-
-<section class="features">
-
-    <div class="container">
-
-        <div class="row">
-
-            <div class="col-md-3 feature-box">
-
-                <h5>
-                    Quality Cameras
-                </h5>
-
-                <p>
-                    Carefully selected photography equipment.
-                </p>
-
-            </div>
+            </button>
 
 
-            <div class="col-md-3 feature-box">
+            <div class="collapse navbar-collapse" id="cameraNavbar">
 
-                <h5>
-                    Free Shipping
-                </h5>
+                <ul class="navbar-nav ms-auto">
 
-                <p>
-                    Free delivery on selected products.
-                </p>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            Home
+                        </a>
+                    </li>
 
-            </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">
+                            Products
+                        </a>
+                    </li>
 
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">
+                            About
+                        </a>
+                    </li>
 
-            <div class="col-md-3 feature-box">
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">
+                            Cart
+                        </a>
+                    </li>
 
-                <h5>
-                    1 Year Warranty
-                </h5>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            Contact
+                        </a>
+                    </li>
 
-                <p>
-                    Warranty support on selected cameras.
-                </p>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tips.html">
+                            Tips
+                        </a>
+                    </li>
 
-            </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shot.html">
+                            Shot
+                        </a>
+                    </li>
 
-
-            <div class="col-md-3 feature-box">
-
-                <h5>
-                    Expert Support
-                </h5>
-
-                <p>
-                    Get help choosing your camera.
-                </p>
+                </ul>
 
             </div>
 
         </div>
 
-    </div>
-
-</section>
+    </nav>
 
 
-<!-- ================= FEATURED CAMERAS ================= -->
+    <!-- ================= GAP ================= -->
 
-<section class="featured-section">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <h2>
-                Featured Cameras
-            </h2>
-
-            <p>
-                Explore some of our popular cameras.
-            </p>
-
-        </div>
+    <div class="hero-gap"></div>
 
 
-        <div
-            class="row g-4"
-            id="cameraList">
+    <!-- ================= HERO ================= -->
 
-        </div>
+    <section class="hero">
+
+        <div class="container">
+
+            <div class="hero-content">
+
+                <h1>
+
+                    CAPTURE
+
+                    <br>
+
+                    <span>THE MOMENT</span>
+
+                </h1>
 
 
-        <p id="orderMessage"></p>
+                <p>
 
-    </div>
+                    Discover premium cameras and
+                    photography equipment designed
+                    for every photographer.
 
-</section>
+                </p>
 
 
-<!-- ================= BRANDS ================= -->
+                <a href="products.html" class="btn gold-button">
 
-<section class="brands-section">
+                    Shop Now
 
-    <div class="container">
+                </a>
 
-        <div class="section-title">
-
-            <h2>
-                Popular Camera Brands
-            </h2>
-
-            <p>
-                Explore cameras from leading brands.
-            </p>
+            </div>
 
         </div>
 
+    </section>
 
-        <div class="row g-4">
+
+    <!-- ================= FEATURES ================= -->
+
+    <section class="features">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-3 feature-box">
+
+                    <h5>
+                        Quality Cameras
+                    </h5>
+
+                    <p>
+                        Carefully selected photography equipment.
+                    </p>
+
+                </div>
 
 
-            <div class="col-md-3">
+                <div class="col-md-3 feature-box">
 
-                <div class="brand-box">
+                    <h5>
+                        Free Shipping
+                    </h5>
 
-                    <h4>
-                        Canon
-                    </h4>
+                    <p>
+                        Free delivery on selected products.
+                    </p>
+
+                </div>
+
+
+                <div class="col-md-3 feature-box">
+
+                    <h5>
+                        1 Year Warranty
+                    </h5>
+
+                    <p>
+                        Warranty support on selected cameras.
+                    </p>
+
+                </div>
+
+
+                <div class="col-md-3 feature-box">
+
+                    <h5>
+                        Expert Support
+                    </h5>
+
+                    <p>
+                        Get help choosing your camera.
+                    </p>
 
                 </div>
 
             </div>
 
+        </div>
 
-            <div class="col-md-3">
-
-                <div class="brand-box">
-
-                    <h4>
-                        Nikon
-                    </h4>
-
-                </div>
-
-            </div>
+    </section>
 
 
-            <div class="col-md-3">
+    <!-- ================= FEATURED CAMERAS ================= -->
 
-                <div class="brand-box">
+    <section class="featured-section">
 
-                    <h4>
-                        Sony
-                    </h4>
+        <div class="container">
 
-                </div>
+            <div class="section-title">
+
+                <h2>
+                    Featured Cameras
+                </h2>
+
+                <p>
+                    Explore some of our popular cameras.
+                </p>
 
             </div>
 
 
-            <div class="col-md-3">
-
-                <div class="brand-box">
-
-                    <h4>
-                        Fujifilm
-                    </h4>
-
-                </div>
+            <div class="row g-4" id="cameraList">
 
             </div>
 
+
+            <p id="orderMessage"></p>
 
         </div>
 
-    </div>
-
-</section>
+    </section>
 
 
-<!-- ================= FOOTER ================= -->
+    <!-- ================= BRANDS ================= -->
 
-<footer>
+    <section class="brands-section">
 
-    <div class="container">
+        <div class="container">
 
-        <div class="row">
+            <div class="section-title">
 
-
-            <div class="col-md-4">
-
-                <h4>
-                    ShutterHub
-                </h4>
+                <h2>
+                    Popular Camera Brands
+                </h2>
 
                 <p>
-                    Capture. Create. Remember.
-                </p>
-
-                <p>
-                    Your destination for cameras
-                    and photography equipment.
+                    Explore cameras from leading brands.
                 </p>
 
             </div>
 
 
-            <div class="col-md-4">
+            <div class="row g-4">
 
-                <h4>
-                    Quick Links
-                </h4>
 
-                <p>
-                    <a href="index.html">
-                        Home
-                    </a>
-                </p>
+                <div class="col-md-3">
 
-                <p>
-                    <a href="products.html">
-                        Products
-                    </a>
-                </p>
+                    <div class="brand-box">
 
-                <p>
-                    <a href="about.html">
-                        About
-                    </a>
-                </p>
+                        <h4>
+                            Canon
+                        </h4>
 
-                <p>
-                    <a href="tips.html">
-                        Photography Tips
-                    </a>
-                </p>
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-3">
+
+                    <div class="brand-box">
+
+                        <h4>
+                            Nikon
+                        </h4>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-3">
+
+                    <div class="brand-box">
+
+                        <h4>
+                            Sony
+                        </h4>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-3">
+
+                    <div class="brand-box">
+
+                        <h4>
+                            Fujifilm
+                        </h4>
+
+                    </div>
+
+                </div>
+
 
             </div>
-
-
-            <div class="col-md-4">
-
-                <h4>
-                    Contact
-                </h4>
-
-                <p>
-                    Bangalore, India
-                </p>
-
-                <p>
-                    +91 98765 43210
-                </p>
-
-                <p>
-                    support@shutterhub.com
-                </p>
-
-            </div>
-
 
         </div>
 
+    </section>
 
-        <div class="footer-bottom">
 
-            <p>
-                &copy; 2026 ShutterHub.
-                All Rights Reserved.
-            </p>
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="container">
+
+            <div class="row">
+
+
+                <div class="col-md-4">
+
+                    <h4>
+                        ShutterHub
+                    </h4>
+
+                    <p>
+                        Capture. Create. Remember.
+                    </p>
+
+                    <p>
+                        Your destination for cameras
+                        and photography equipment.
+                    </p>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <h4>
+                        Quick Links
+                    </h4>
+
+                    <p>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </p>
+
+                    <p>
+                        <a href="products.html">
+                            Products
+                        </a>
+                    </p>
+
+                    <p>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </p>
+
+                    <p>
+                        <a href="tips.html">
+                            Tips
+                        </a>
+                    </p>
+                    <p>
+                        <a href="contact.html">
+                            contact
+                        </a>
+                    </p>
+                    <p>
+                        <a href="cart.html">
+                            cart
+                        </a>
+                    </p>
+                    <p>
+                        <a href="shot.html">
+                            shot
+                        </a>
+                    </p>
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <h4>
+                        Contact
+                    </h4>
+
+                    <p>
+                        Bangalore, India
+                    </p>
+
+                    <p>
+                        +91 1111 1111
+                    </p>
+
+                    <p>
+                        support@shutterhub.com
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    &copy; 2026 ShutterHub.
+                    All Rights Reserved.
+                </p>
+
+            </div>
 
         </div>
 
-    </div>
+    </footer>
 
-</footer>
 
+    <!-- Bootstrap JS -->
 
-<!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
 
-<script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-</script>
 
+    <!-- ================= JAVASCRIPT ================= -->
 
-<!-- ================= JAVASCRIPT ================= -->
-
-<script>
-
-    console.log(
-        "ShutterHub Home Page loaded successfully."
-    );
-
-
-    /* CAMERA ARRAY */
-
-    const cameras = [
-
-        "Canon EOS R50",
-
-        "Nikon Z50",
-
-        "Sony Alpha A6400",
-
-        "Fujifilm X-T5",
-
-        "Canon EOS R10",
-
-        "Nikon Z fc"
-
-    ];
-
-
-    /* CAMERA IMAGES */
-
-    const cameraImages = [
-
-        "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=800&q=80",
-
-
-        "Nikon Z50.jpg",
-         
-        "Sony Alpha A6400.jpg",
-
-        "Fujifilm X-T5.jpg",
-
-
-        "https://images.unsplash.com/photo-1512790182412-b19e6d62bc39?auto=format&fit=crop&w=800&q=80",
-
-        "https://images.unsplash.com/photo-1516724562728-afc824a36e84?auto=format&fit=crop&w=800&q=80"
-
-    ];
-
-
-    /* PRICES */
-
-    const prices = [
-
-        "₹64,999",
-
-        "₹76,999",
-
-        "₹64,999",
-
-        "₹1,69,999",
-
-        "₹79,999",
-
-        "₹89,999"
-
-    ];
-
-
-    /* LENGTH */
-
-    console.log(
-        "Total cameras: " + cameras.length
-    );
-
-
-    /* SLICE */
-
-    const featuredCameras =
-        cameras.slice(0, 4);
-
-
-    console.log(
-        "Featured cameras:",
-        featuredCameras
-    );
-
-
-    /* CONCAT */
-
-    const canonCameras = [
-
-        "Canon EOS R50",
-
-        "Canon EOS R10"
-
-    ];
-
-
-    const sonyCameras = [
-
-        "Sony Alpha A6400"
-
-    ];
-
-
-    const allCameras =
-        canonCameras.concat(sonyCameras);
-
-
-    console.log(
-        "After concat():",
-        allCameras
-    );
-
-
-    /* PUSH */
-
-    cameras.push("Panasonic Lumix G95");
-
-    console.log(
-        "After push():",
-        cameras
-    );
-
-
-    /* POP */
-
-    cameras.pop();
-
-    console.log(
-        "After pop():",
-        cameras
-    );
-
-
-    /* UNSHIFT */
-
-    cameras.unshift("Sony Alpha A7 III");
-
-    console.log(
-        "After unshift():",
-        cameras
-    );
-
-
-    /* SHIFT */
-
-    cameras.shift();
-
-    console.log(
-        "After shift():",
-        cameras
-    );
-
-
-    /* SPLICE */
-
-    const sampleCameras = [
-
-        "Canon",
-        "Nikon",
-        "Sony",
-        "Fujifilm"
-
-    ];
-
-
-    sampleCameras.splice(2, 1);
-
-
-    console.log(
-        "After splice():",
-        sampleCameras
-    );
-
-
-    /* COPYWITHIN */
-
-    const brands = [
-
-        "Canon",
-        "Nikon",
-        "Sony",
-        "Fujifilm"
-
-    ];
-
-
-    brands.copyWithin(1, 0, 1);
-
-
-    console.log(
-        "After copyWithin():",
-        brands
-    );
-
-
-    /* DELETE */
-
-    const exampleCamera = [
-
-        "Canon",
-        "Nikon",
-        "Sony"
-
-    ];
-
-
-    delete exampleCamera[1];
-
-
-    console.log(
-        "After delete():",
-        exampleCamera
-    );
-
-
-    /* DISPLAY CAMERAS */
-
-    const cameraList =
-        document.getElementById(
-            "cameraList"
+    <script>
+        console.log(
+            "ShutterHub Home Page loaded successfully."
         );
 
 
-    featuredCameras.forEach(
-        function(camera, index) {
+        /* CAMERA ARRAY */
 
-            cameraList.innerHTML +=
+        const cameras = [
 
-                '<div class="col-lg-3 col-md-6">' +
+            "Canon EOS R50",
+
+            "Nikon Z50",
+
+            "Sony Alpha A6400",
+
+            "Fujifilm X-T5",
+
+            "Canon EOS R10",
+
+            "Nikon Z fc"
+
+        ];
+
+
+        /* CAMERA IMAGES */
+
+        const cameraImages = [
+
+            "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=800&q=80",
+
+
+            "Nikon Z50.jpg",
+
+            "Sony Alpha A6400.jpg",
+
+            "Fujifilm X-T5.jpg",
+
+
+            "https://images.unsplash.com/photo-1512790182412-b19e6d62bc39?auto=format&fit=crop&w=800&q=80",
+
+            "https://images.unsplash.com/photo-1516724562728-afc824a36e84?auto=format&fit=crop&w=800&q=80"
+
+        ];
+
+
+        /* PRICES */
+
+        const prices = [
+
+            "₹64,999",
+
+            "₹76,999",
+
+            "₹64,999",
+
+            "₹1,69,999",
+
+            "₹79,999",
+
+            "₹89,999"
+
+        ];
+
+
+        /* LENGTH */
+
+        console.log(
+            "Total cameras: " + cameras.length
+        );
+
+
+        /* SLICE */
+
+        const featuredCameras =
+            cameras.slice(0, 4);
+
+
+        console.log(
+            "Featured cameras:",
+            featuredCameras
+        );
+
+
+        /* CONCAT */
+
+        const canonCameras = [
+
+            "Canon EOS R50",
+
+            "Canon EOS R10"
+
+        ];
+
+
+        const sonyCameras = [
+
+            "Sony Alpha A6400"
+
+        ];
+
+
+        const allCameras =
+            canonCameras.concat(sonyCameras);
+
+
+        console.log(
+            "After concat():",
+            allCameras
+        );
+
+
+        /* PUSH */
+
+        cameras.push("Panasonic Lumix G95");
+
+        console.log(
+            "After push():",
+            cameras
+        );
+
+
+        /* POP */
+
+        cameras.pop();
+
+        console.log(
+            "After pop():",
+            cameras
+        );
+
+
+        /* UNSHIFT */
+
+        cameras.unshift("Sony Alpha A7 III");
+
+        console.log(
+            "After unshift():",
+            cameras
+        );
+
+
+        /* SHIFT */
+
+        cameras.shift();
+
+        console.log(
+            "After shift():",
+            cameras
+        );
+
+
+        /* SPLICE */
+
+        const sampleCameras = [
+
+            "Canon",
+            "Nikon",
+            "Sony",
+            "Fujifilm"
+
+        ];
+
+
+        sampleCameras.splice(2, 1);
+
+
+        console.log(
+            "After splice():",
+            sampleCameras
+        );
+
+
+        /* COPYWITHIN */
+
+        const brands = [
+
+            "Canon",
+            "Nikon",
+            "Sony",
+            "Fujifilm"
+
+        ];
+
+
+        brands.copyWithin(1, 0, 1);
+
+
+        console.log(
+            "After copyWithin():",
+            brands
+        );
+
+
+        /* DELETE */
+
+        const exampleCamera = [
+
+            "Canon",
+            "Nikon",
+            "Sony"
+
+        ];
+
+
+        delete exampleCamera[1];
+
+
+        console.log(
+            "After delete():",
+            exampleCamera
+        );
+
+
+        /* DISPLAY CAMERAS */
+
+        const cameraList =
+            document.getElementById(
+                "cameraList"
+            );
+
+
+        featuredCameras.forEach(
+            function(camera, index) {
+
+                cameraList.innerHTML +=
+
+                    '<div class="col-lg-3 col-md-6">' +
 
                     '<div class="camera-card">' +
 
-                        '<img src="' +
-                        cameraImages[index] +
-                        '" alt="' +
-                        camera +
-                        '">' +
+                    '<img src="' +
+                    cameraImages[index] +
+                    '" alt="' +
+                    camera +
+                    '">' +
 
-                        '<div class="camera-content">' +
+                    '<div class="camera-content">' +
 
-                            '<h5>' +
-                            camera +
-                            '</h5>' +
+                    '<h5>' +
+                    camera +
+                    '</h5>' +
 
-                            '<p>' +
-                            'Premium camera for photography lovers.' +
-                            '</p>' +
+                    '<p>' +
+                    'Premium camera for photography lovers.' +
+                    '</p>' +
 
-                            '<div class="price">' +
-                            prices[index] +
-                            '</div>' +
+                    '<div class="price">' +
+                    prices[index] +
+                    '</div>' +
 
-                            '<button class="btn gold-button w-100" ' +
+                    '<button class="btn gold-button w-100" ' +
 
-                            'onclick="addItem(\'' +
-                            camera +
-                            '\', \'' +
-                            cameraImages[index] +
-                            '\', \'' +
-                            prices[index] +
-                            '\')">' +
+                    'onclick="addItem(\'' +
+                    camera +
+                    '\', \'' +
+                    cameraImages[index] +
+                    '\', \'' +
+                    prices[index] +
+                    '\')">' +
 
-                            'Add to Cart' +
+                    'Add to Cart' +
 
-                            '</button>' +
-
-                        '</div>' +
+                    '</button>' +
 
                     '</div>' +
 
-                '</div>';
+                    '</div>' +
 
-        }
-    );
+                    '</div>';
 
-
-    /* JOIN */
-
-    const cameraNames =
-        featuredCameras.join(", ");
+            }
+        );
 
 
-    console.log(
-        "Camera names using join():",
-        cameraNames
-    );
+        /* JOIN */
 
+        const cameraNames =
+            featuredCameras.join(", ");
 
-    /* ADD ITEM */
-
-    function addItem(item, image, price) {
 
         console.log(
-            "Selected camera: " + item
+            "Camera names using join():",
+            cameraNames
         );
 
 
-        document.getElementById(
-            "orderMessage"
-        ).innerHTML =
+        /* ADD ITEM */
 
-            "You selected <strong>" +
-            item +
-            "</strong>.";
+        function addItem(item, image, price) {
 
-
-        alert(
-            item +
-            " selected successfully!"
-        );
+            console.log(
+                "Selected camera: " + item
+            );
 
 
-        /* URL PARAMETERS */
+            document.getElementById(
+                    "orderMessage"
+                ).innerHTML =
 
-        window.location.href =
+                "You selected <strong>" +
+                item +
+                "</strong>.";
 
-            "cart.html?item=" +
-            encodeURIComponent(item) +
 
-            "&image=" +
-            encodeURIComponent(image) +
+            alert(
+                item +
+                " selected successfully!"
+            );
 
-            "&price=" +
-            encodeURIComponent(price);
 
-    }
+            /* URL PARAMETERS */
 
-</script>
+            window.location.href =
+
+                "cart.html?item=" +
+                encodeURIComponent(item) +
+
+                "&image=" +
+                encodeURIComponent(image) +
+
+                "&price=" +
+                encodeURIComponent(price);
+
+        }
+    </script>
 
 
 </body>
