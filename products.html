@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Products - ShutterHub</title>
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <style>
+
+        body {
+            background-color: #141718;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            background-color: #0B0D0E;
+            padding: 18px 0;
+            border-bottom: 1px solid #343A3D;
+        }
+
+        .navbar-brand {
+            color: #D4A64A;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .navbar-brand:hover {
+            color: #F0C674;
+        }
+
+        .nav-link {
+            color: white;
+            margin-left: 15px;
+        }
+
+        .nav-link:hover {
+            color: #D4A64A;
+        }
+
+        .navbar-toggler {
+            border: 1px solid #D4A64A;
+        }
+
+        .navbar-toggler-icon {
+            filter: invert(1);
+        }
+
+        .page-gap {
+            height: 25px;
+        }
+
+        .page-header {
+            text-align: center;
+            padding: 60px 0;
+            background-color: #0B0D0E;
+        }
+
+        .page-header h1 {
+            color: #D4A64A;
+            font-size: 45px;
+            font-weight: bold;
+        }
+
+        .page-header p {
+            color: #B8BEC3;
+        }
+
+        .section-title {
+            margin-top: 70px;
+            margin-bottom: 35px;
+        }
+
+        .section-title h2 {
+            color: #ffffff;
+            font-size: 35px;
+        }
+
+        .section-title p {
+            color: #B8BEC3;
+        }
+
+        .product-card {
+            background-color: #1C2022;
+            border: 1px solid #343A3D;
+            border-radius: 8px;
+            overflow: hidden;
+            height: 100%;
+            transition: 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-7px);
+            border-color: #D4A64A;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 230px;
+            object-fit: cover;
+        }
+
+        .product-content {
+            padding: 20px;
+        }
+
+        .product-content h5 {
+            color: white;
+        }
+
+        .product-content p {
+            color: #B8BEC3;
+        }
+
+        .price {
+            color: #D4A64A;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .gold-button {
+            background-color: #D4A64A;
+            color: black;
+            border: none;
+            font-weight: bold;
+        }
+
+        .gold-button:hover {
+            background-color: #F0C674;
+            color: black;
+        }
+
+        #orderMessage {
+            color: #F0C674;
+            text-align: center;
+            margin: 25px 0;
+        }
+
+        footer {
+            background-color: #080A0B;
+            margin-top: 80px;
+            padding: 45px 0 20px;
+            border-top: 1px solid #343A3D;
+        }
+
+        footer h4 {
+            color: #D4A64A;
+        }
+
+        footer p,
+        footer a {
+            color: #B8BEC3;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #F0C674;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #343A3D;
+            margin-top: 30px;
+            padding-top: 20px;
+            text-align: center;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-expand-lg">
+
+    <div class="container">
+
+        <a class="navbar-brand" href="index.html">
+            ShutterHub
+        </a>
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#cameraNavbar">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div
+            class="collapse navbar-collapse"
+            id="cameraNavbar">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">
+                        Products
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">
+                        About
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html">
+                        Cart
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="tips.html">
+                        Tips
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="shot.html">
+                        Shot
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<div class="page-gap"></div>
+
+
+<!-- HEADER -->
+
+<section class="page-header">
+
+    <div class="container">
+
+        <h1>Our Products</h1>
+
+        <p>
+            Cameras, lenses and accessories
+            for every photographer.
+        </p>
+
+    </div>
+
+</section>
+
+
+<div class="container">
+
+
+<!-- CAMERAS -->
+
+<div class="section-title">
+
+    <h2> Cameras</h2>
+
+    <p>
+        Explore our collection of cameras.
+    </p>
+
+</div>
+
+
+<div class="row g-4" id="cameraProducts"></div>
+
+
+<!-- ACCESSORIES -->
+
+<div class="section-title">
+
+    <h2>Camera Accessories</h2>
+
+    <p>
+        Everything you need to complete your photography setup.
+    </p>
+
+</div>
+
+
+<div class="row g-4" id="accessoryProducts"></div>
+
+
+<p id="orderMessage"></p>
+
+
+</div>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-4">
+
+                <h4>ShutterHub</h4>
+
+                <p>
+                    Capture. Create. Remember.
+                </p>
+
+                <p>
+                    Your destination for cameras
+                    and photography equipment.
+                </p>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <h4>Quick Links</h4>
+
+                <p>
+                    <a href="index.html">Home</a>
+                </p>
+
+                <p>
+                    <a href="products.html">Products</a>
+                </p>
+
+                <p>
+                    <a href="about.html">About</a>
+                </p>
+
+                <p>
+                    <a href="tips.html">Tips</a>
+                </p>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <h4>Contact</h4>
+
+                <p>Bangalore, India</p>
+
+                <p>+91 1111 1111</p>
+
+                <p>support@shutterhub.com</p>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 ShutterHub.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+<script>
+
+console.log("ShutterHub Products Page loaded successfully.");
+
+
+/* CAMERA ARRAY */
+
+const cameras = [
+
+    "Canon EOS R50",
+    "Canon EOS R10",
+    "Nikon Z50",
+    "Nikon Z fc",
+    "Sony Alpha A6400",
+    "Sony Alpha A7 III",
+    "Fujifilm X-S20",
+    "Fujifilm X-T5"
+
+];
+
+
+/* CAMERA IMAGES */
+
+const cameraImages = [
+
+    "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=800&q=80",
+
+    "https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=800&q=80",
+
+    "Nikon Z50.jpg",
+
+    "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=800&q=80",
+
+    "Sony Alpha A6400.jpg",
+
+    "https://images.unsplash.com/photo-1516724562728-afc824a36e84?auto=format&fit=crop&w=800&q=80",
+
+    "Fujifilm X-S20.jpg",
+
+    "Fujifilm X-T5.jpg"
+
+];
+
+
+/* CAMERA PRICES */
+
+const cameraPrices = [
+
+    "₹64,999",
+    "₹79,999",
+    "₹76,999",
+    "₹89,999",
+    "₹64,999",
+    "₹1,39,999",
+    "₹1,19,999",
+    "₹1,69,999"
+
+];
+
+
+/* ACCESSORIES */
+
+const accessories = [
+
+    "Camera Tripod",
+    "Camera Backpack",
+    "50mm Camera Lens",
+    "24-70mm Zoom Lens",
+    "Camera Flash",
+    "128GB Memory Card",
+    "Extra Camera Battery",
+    "Camera Cleaning Kit"
+
+];
+
+
+/* ACCESSORY IMAGES */
+
+const accessoryImages = [
+
+    "Camera Tripod.jpg",
+
+    "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80",
+
+    "50mm Camera Lens.jpg",
+
+    "24-70mm Zoom Lens.jpg",
+
+    "Camera Flash.jpg",
+
+    "128GB Memory Card.jpg",
+
+    "Extra Camera Battery.jpg",
+
+    "Camera Cleaning Kit.jpg"
+
+];
+
+
+/* ACCESSORY PRICES */
+
+const accessoryPrices = [
+
+    "₹3,999",
+    "₹4,999",
+    "₹18,999",
+    "₹74,999",
+    "₹8,999",
+    "₹1,499",
+    "₹4,499",
+    "₹999"
+
+];
+
+
+/* LENGTH */
+
+console.log("Number of cameras: " + cameras.length);
+
+console.log("Number of accessories: " + accessories.length);
+
+
+/* SLICE */
+
+const featuredCameras =
+    cameras.slice(0, 4);
+
+console.log(
+    "Featured cameras using slice():",
+    featuredCameras
+);
+
+
+/* CONCAT */
+
+const allProducts =
+    cameras.concat(accessories);
+
+console.log(
+    "All products using concat():",
+    allProducts
+);
+
+
+/* PUSH */
+
+cameras.push("Panasonic Lumix G95");
+
+console.log(
+    "After push():",
+    cameras
+);
+
+
+/* POP */
+
+cameras.pop();
+
+console.log(
+    "After pop():",
+    cameras
+);
+
+
+/* UNSHIFT */
+
+accessories.unshift("Camera Strap");
+
+console.log(
+    "After unshift():",
+    accessories
+);
+
+
+/* SHIFT */
+
+accessories.shift();
+
+console.log(
+    "After shift():",
+    accessories
+);
+
+
+/* SPLICE */
+
+const demoAccessories = [
+
+    "Tripod",
+    "Lens",
+    "Flash",
+    "Bag"
+
+];
+
+demoAccessories.splice(2, 1);
+
+console.log(
+    "After splice():",
+    demoAccessories
+);
+
+
+/* COPYWITHIN */
+
+const demoBrands = [
+
+    "Canon",
+    "Nikon",
+    "Sony",
+    "Fujifilm"
+
+];
+
+demoBrands.copyWithin(1, 0, 1);
+
+console.log(
+    "After copyWithin():",
+    demoBrands
+);
+
+
+/* DELETE */
+
+const demoCamera = [
+
+    "Canon",
+    "Nikon",
+    "Sony"
+
+];
+
+delete demoCamera[1];
+
+console.log(
+    "After delete():",
+    demoCamera
+);
+
+
+/* DISPLAY CAMERAS */
+
+const cameraProducts =
+    document.getElementById(
+        "cameraProducts"
+    );
+
+
+cameras.forEach(
+    function(camera, index) {
+
+        cameraProducts.innerHTML +=
+
+        '<div class="col-lg-3 col-md-6">' +
+
+            '<div class="product-card">' +
+
+                '<img src="' +
+                cameraImages[index] +
+                '" alt="' +
+                camera +
+                '">' +
+
+                '<div class="product-content">' +
+
+                    '<h5>' +
+                    camera +
+                    '</h5>' +
+
+                    '<p>Premium camera for photographers.</p>' +
+
+                    '<div class="price">' +
+                    cameraPrices[index] +
+                    '</div>' +
+
+                    '<button class="btn gold-button w-100" ' +
+
+                    'onclick="addItem(\'' +
+                    camera +
+                    '\', \'' +
+                    cameraImages[index] +
+                    '\', \'' +
+                    cameraPrices[index] +
+                    '\')">' +
+
+                    'Add to Cart' +
+
+                    '</button>' +
+
+                '</div>' +
+
+            '</div>' +
+
+        '</div>';
+
+    }
+);
+
+
+/* DISPLAY ACCESSORIES */
+
+const accessoryProducts =
+    document.getElementById(
+        "accessoryProducts"
+    );
+
+
+accessories.forEach(
+    function(accessory, index) {
+
+        accessoryProducts.innerHTML +=
+
+        '<div class="col-lg-3 col-md-6">' +
+
+            '<div class="product-card">' +
+
+                '<img src="' +
+                accessoryImages[index] +
+                '" alt="' +
+                accessory +
+                '">' +
+
+                '<div class="product-content">' +
+
+                    '<h5>' +
+                    accessory +
+                    '</h5>' +
+
+                    '<p>Useful gear for your camera setup.</p>' +
+
+                    '<div class="price">' +
+                    accessoryPrices[index] +
+                    '</div>' +
+
+                    '<button class="btn gold-button w-100" ' +
+
+                    'onclick="addItem(\'' +
+                    accessory +
+                    '\', \'' +
+                    accessoryImages[index] +
+                    '\', \'' +
+                    accessoryPrices[index] +
+                    '\')">' +
+
+                    'Add to Cart' +
+
+                    '</button>' +
+
+                '</div>' +
+
+            '</div>' +
+
+        '</div>';
+
+    }
+);
+
+
+/* JOIN */
+
+const productNames =
+    allProducts.join(", ");
+
+console.log(
+    "Products using join():",
+    productNames
+);
+
+
+/* ADD ITEM */
+
+function addItem(item, image, price) {
+
+    console.log(
+        "Selected product: " + item
+    );
+
+
+    document.getElementById(
+        "orderMessage"
+    ).innerHTML =
+
+        "You selected <strong>" +
+        item +
+        "</strong>.";
+
+
+    alert(
+        item +
+        " selected successfully!"
+    );
+
+
+    /* URL PARAMETERS */
+
+    window.location.href =
+
+        "cart.html?item=" +
+        encodeURIComponent(item) +
+
+        "&image=" +
+        encodeURIComponent(image) +
+
+        "&price=" +
+        encodeURIComponent(price);
+
+}
+
+</script>
+
+</body>
+
+</html>
